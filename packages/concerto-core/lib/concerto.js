@@ -48,7 +48,8 @@ class Concerto {
      * @param {*} [options] the validation options
      * @throws {Error} - if the instance if invalid with respect to the model
      */
-    validate(obj, options) {
+        public void validate(String jsonObject, ObjectValidatorOptions options) {
+        //...
         const classDeclaration = this.getTypeDeclaration(obj);
         const parameters = {};
         parameters.stack = new TypedStack(obj);
